@@ -1,0 +1,13 @@
+<h1><%= @article.title %></h1>
+
+<btn> <%=link_to "🖋", edit_article_path %></btn>
+<btn> <%=link_to "🗑", article_path(@article), method: :delete, data: { confirm: "Are you sure you want to delete this article?" } %></btn>
+
+<p><%= @article.content %></p>
+
+
+
+<%=link_to "Back to list", articles_path %>
+
+
+# manque creer les view de edit/update, create/new et les links de page
